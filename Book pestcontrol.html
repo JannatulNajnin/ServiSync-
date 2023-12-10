@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <title>ServiSync Electricians</title>
+
+  <style>
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .electrician-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 10px;
+      display: flex;
+      transition: transform 0.3s ease-in-out;
+      box-sizing: border-box;
+    }
+
+    .electrician-card:hover {
+      transform: scale(1.05);
+    }
+
+    .electrician-img {
+      width: 80px;
+      height: 80px; 
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .electrician-info {
+      flex: 1;
+    }
+
+    .electrician-name {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .electrician-rating {
+      color: #f39c12;
+      font-size: 1.2em;
+      margin-bottom: 5px;
+    }
+
+    .electrician-reviewers {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .electrician-specialty,
+    .electrician-location,
+    .electrician-phone {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    .call-now-button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .search-bar {
+      margin-top: 10px;
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .search-button {
+      padding: 10px;
+      background-color: #2ecc71;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+</div>
+
+
+
+
+  <header>
+    <h1>ServiSync Electricians</h1>
+    <input type="text" class="search-bar" placeholder="Search by Specialty or Area...">
+    <button class="search-button">Search</button>
+  </header>
+
+
+  <main>
+    <div class="modal fade" tabindex="-1" id="booking-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+
+       <!-- <img src="D:\NOTES\porashona\ttt\SPV-20231130T155546Z-001\SPV/smssol.jpg" alt="Logo" class="modal-logo"> -->
+
+        <h5 class="modal-title">Book Service</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+
+          <div class="form-floating">
+
+            <div class="form-floating">
+           <input id="name_1" type="text" class="form-control" placeholder="Your Name">
+
+           <label for="name_1">Selected Service:</label> 
+
+          </div>
+          <div class="form-floating">
+           <input id="name_1" type="text" class="form-control" placeholder="Your Name">
+
+           <label for="name_1">Price: 1,50,000</label> 
+
+          </div>
+           
+
+          </div>
+
+        
+          <div class="form-floating">
+           <input id="name_1" type="text" class="form-control" placeholder="Your Name">
+
+           <label for="name_1">Enter your Name</label> 
+
+          </div>
+
+
+          <div class="form-floating">
+           <input id="email_1" type="email" class="form-control" placeholder="Your Email">
+
+           <label for="email_1">Enter your e-mail </label> 
+
+          </div>
+          <div class="form-floating">
+           <input id="no_1" type="tel" class="form-control" placeholder="Your Number">
+
+           <label for="no_1">Enter your Phone Number</label> 
+
+          </div>
+
+          <div class="form-floating">
+           <input id="date_1" type="date" class="form-control" placeholder="Your Date">
+           
+           <label for="date_1">Choose Date </label> 
+
+          </div>
+
+          <div class="form-floating">
+           <input id="time_1" type="time" class="form-control" placeholder="Your Time">
+           
+           <label for="time_1">Choose Time</label> 
+
+          </div>
+          
+        </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="C:\Users\USER\Desktop\SP)2\SPV/Popup page.html">
+        <button type="button" class="btn btn-primary" onclick="location.href='youtube.com'">Confirm Request</button>
+      </a>
+      </div>
+    </div>
+  </div>
+
+
+    
+</div>
+      
+    <div class="electrician-card">
+      <img class="electrician-img" src=".jpg" alt="John Doe">
+      <div class="electrician-info">
+        <div class="electrician-name">Sohel Khan</div>
+        <div class="electrician-rating">4.8/5</div>
+        <div class="electrician-reviewers">(15 reviews)</div>
+        <div class="electrician-specialty">Insect Control</div>
+        <div class="electrician-location">Area: ABC Town</div>
+        <button class="call-now-button" data-bs-toggle="modal" data-bs-target="#booking-modal">Book Now</button>
+      </div>
+    </div>
+
+    <div class="electrician-card">
+      <img class="electrician-img" src="elec.jpg" alt="Wasif Imran">
+      <div class="electrician-info">
+        <div class="electrician-name">Abdur Rahim</div>
+        <div class="electrician-rating">4.5/5</div>
+        <div class="electrician-reviewers">(10 reviews)</div>
+        <div class="electrician-specialty">Rodent Control</div>
+        <div class="electrician-location">Area: Zigatola</div>
+        <button class="call-now-button" data-bs-toggle="modal" data-bs-target="#booking-modal">Book Now</button>
+      </div>
+    </div>
+
+    <div class="electrician-card">
+      <img class="electrician-img" src=".jpg" alt="John Doe">
+      <div class="electrician-info">
+        <div class="electrician-name">Rokea Begum</div>
+        <div class="electrician-rating">4.8/5</div>
+        <div class="electrician-reviewers">(15 reviews)</div>
+        <div class="electrician-specialty">Termite Treatment</div>
+        <div class="electrician-location">Area: ABC Town</div>
+        <button class="call-now-button" data-bs-toggle="modal" data-bs-target="#booking-modal">Book Now</button>
+      </div>
+    </div>
+
+    <div class="electrician-card">
+      <img class="electrician-img" src=".jpg" alt="John Doe">
+      <div class="electrician-info">
+        <div class="electrician-name">Hamid Ahmed</div>
+        <div class="electrician-rating">4.8/5</div>
+        <div class="electrician-reviewers">(15 reviews)</div>
+        <div class="electrician-specialty">Bed Bug Extermination</div>
+        <div class="electrician-location">Area: ABC Town</div>
+        <button class="call-now-button" data-bs-toggle="modal" data-bs-target="#booking-modal">Book Now</button>
+      </div>
+    </div>
+    <!-- Add more electricians as needed -->
+
+  </main>
+
+  <footer>
+    &copy; 2023 ServiSync: Your Local Home Services Hub
+  </footer>
+
+</body>
+
+</html>
